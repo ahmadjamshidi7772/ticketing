@@ -1,0 +1,33 @@
+[project]
+name = "ticketing-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "django>=5.2,<5.3",
+  "djangorestframework>=3.15",
+  "drf-spectacular>=0.27",
+  "django-filter>=24.3",
+  "django-cors-headers>=4.6",
+  "django-environ>=0.11",
+  "psycopg[binary]>=3.2",
+  "django-redis>=5.4",
+  "celery[redis]>=5.4",
+  "structlog>=24.4",
+  "gunicorn>=22.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3",
+  "pytest-django>=4.9",
+  "pytest-cov>=6.0",
+  "factory-boy>=3.3",
+  "ruff>=0.8",
+  "mypy>=1.13",
+  "django-stubs[compatible-mypy]>=5.1",
+  "djangorestframework-stubs[compatible-mypy]>=3.15",
+  "bandit[toml]>=1.8",
+]
+
+[tool.uv]
+package = false

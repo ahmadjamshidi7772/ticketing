@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# Node
+node_modules/
+.next/
+out/
+coverage/
+# Env & secrets
+.env
+.env.*
+!.env.example
+# Misc
+.DS_Store
+.idea/
+.vscode/
+*.log
+staticfiles/
+media/
